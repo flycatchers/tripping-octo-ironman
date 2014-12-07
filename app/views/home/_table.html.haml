@@ -1,0 +1,29 @@
+%table.table.table-hover.table-nomargin.table-bordered.datatable
+  %thead
+    %tr.thefilter
+    %tr
+      %th Title
+      %th Description
+      %th Clicked On
+      
+  %tbody
+    - @photos.each do |photo|
+      %tr
+        %td
+          = photo['title']
+        %td 
+          = photo['description']
+        %td
+          = photo['dates']['taken']
+
+
+:javascript
+  
+  $(document).ready(function(){
+    $('.datatable').DataTable();
+  });
+
+
+
+
+   
