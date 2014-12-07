@@ -18,8 +18,9 @@ gem "twitter-bootstrap-rails"
 gem 'haml'
 gem 'quiet_assets'
 gem 'jquery-datatables-rails', '~> 3.1.1'
+gem 'therubyracer', platforms: :ruby
 
 group :development do
-	gem 'therubyracer', platforms: :ruby
+	
 	gem 'awesome_print'
 end

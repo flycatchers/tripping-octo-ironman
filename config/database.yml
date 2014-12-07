@@ -8,4 +8,11 @@ development:
   encoding: unicode
   database: flycatchers_dev
   pool: 5
+
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: flycatchers_prod
+  pool: 5
   
